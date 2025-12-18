@@ -48,3 +48,16 @@ if (height1 > height2) {
     "person2 is taller than person1 by " + (height2 - height1) + " cm "
   );
 }
+
+var person1 = prompt("tell me your name ");
+var height1 = +prompt("tell me your height in cm");
+var person2 = prompt("tell me your name ");
+var height2 = +prompt("tell me your height in cm");
+
+if (height1 > height2) {
+  console.log("person1 is taller than person2 by " + (height1 - 2) + " cm ");
+} else if (height1 < height2) {
+  console.log(
+    "person2 is taller than person1 by " + (height2 - height1) + " cm "
+  );
+}
