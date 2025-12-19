@@ -18,4 +18,5 @@ FEEDBACK>>>>.>
 9. don't see always the presentation board , see one time and make structure of u r words
 10. make little colorful
 11. coolors.co webside for color combination of presentation
-12.
+12. flsy mdn
+    learn js ragavkumarv.com >>>>> task leaarn

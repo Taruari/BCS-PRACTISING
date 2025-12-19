@@ -12,5 +12,5 @@
 
 const { name = "Surya", skills = ["HTML", "CSS", "Singer"] } = student;
 
-console.log(name, skills);
-console.log(city);
+console.log(skills);
+console.log(name);
