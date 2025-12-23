@@ -60,4 +60,11 @@
 // while (shark <= 3) {
 //   console.log("🐳".repeat(shark));
 //   shark += 1;
-// }
+//}
+
+function printPattern(emoji, noOfROws) {
+  for (let emojiCount = 1; emojiCount <= noOfROws; emojiCount++) {
+    console.log(emoji.repeat(emojiCount));
+  }
+}
+printPattern("🐳", "5");
