@@ -45,41 +45,61 @@
 // console.log(getUserAge(user1));
 // console.log(getUserAge(user2));
 // console.log(getUserAge(user3));
-const sample = "Hello World";
+// const sample = "Hello World";
 
-// Write a function to reverse a string using spread, reverse & join
-const reverseString = (str) => {
-  // Your code here
-  return str.split("").reverse().join("");
-};
+// // Write a function to reverse a string using spread, reverse & join
+// const reverseString = (str) => {
+//   // Your code here
+//   return str.split("").reverse().join("");
+// };
 
-console.log(reverseString(sample));
+// console.log(reverseString(sample));
 
-const movies = [
-  {
-    id: 1,
-    title: "Baahubali",
-    ratings: [8, 9, 10],
-  },
-  {
-    id: 2,
-    title: "Arjun Reddy",
-    ratings: [9, 8, 9],
-  },
-  {
-    id: 3,
-    title: "Mahanati",
-    ratings: [10, 9, 8],
-  },
+// const movies = [
+//   {
+//     id: 1,
+//     title: "Baahubali",
+//     ratings: [8, 9, 10],
+//   },
+//   {
+//     id: 2,
+//     title: "Arjun Reddy",
+//     ratings: [9, 8, 9],
+//   },
+//   {
+//     id: 3,
+//     title: "Mahanati",
+//     ratings: [10, 9, 8],
+//   },
+// ];
+
+// // Write a function that compiles all ratings into a single array
+// const getAllRatings = (movies) => {
+//   // Your code here
+//   return movies.reduce((acc, movie) => {
+//     // Spread the old items and the new ratings into a new array
+//     return [...acc, ...movie.ratings];
+//   }, []);
+// };
+
+// console.log(JSON.stringify(getAllRatings(movies)));
+
+const books = [
+  { title: "Infinite Jest", rating: 4.5, genre: "Fiction" },
+  { title: "The Catcher in the Rye", rating: 3.9, genre: "Fiction" },
+  { title: "Sapiens", rating: 4.9, genre: "History" },
+  { title: "A Brief History of Time", rating: 4.8, genre: "Science" },
+  { title: "Clean Code", rating: 4.7, genre: "Technology" },
 ];
 
-// Write a function that compiles all ratings into a single array
-const getAllRatings = (movies) => {
-  // Your code here
-  return movies.reduce((acc, movie) => {
-    // Spread the old items and the new ratings into a new array
-    return [...acc, ...movie.ratings];
-  }, []);
-};
-
-console.log(JSON.stringify(getAllRatings(movies)));
+function getTitles(books, rating) {
+  // Your code
+  let titles = [];
+  for (let book of books) {
+    if (book.rating >= 4.7) {
+      titles.push(book.title);
+    }
+  }
+  return titles;
+}
+console.log(getTitles(books, 4.7));
