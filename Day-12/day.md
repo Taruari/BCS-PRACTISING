@@ -10,3 +10,7 @@ reduce method
 it can give any method string or may array
 reduce is immutable
 auto boxing concept >>> learn it from home
+
+utf 8 >>>> other language character and emoji character
+html is forgive language
+html iis ignoring the h7 elments
