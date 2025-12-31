@@ -49,13 +49,61 @@
 // console.log(square(4)); // 16
 
 // The following variables are defined in the global scope
-const num1 = 20;
-const num2 = 3;
-const name = "Chamakh";
+// const num1 = 20;
+// const num2 = 3;
+// const name = "Chamakh";
 
-// This function is defined in the global scope
-function multiply() {
-  return num1 * num2;
-}
+// // This function is defined in the global scope
+// function multiply() {
+//   return num1 * num2;
+// }
 
-console.log(multiply()); // 60
+// console.log(multiply()); // 60
+
+// const users = [
+//   { id: 1, name: "Arjun", email: "arjun@example.com" },
+//   { id: 2, name: "Sneha", email: "sneha@example.com" },
+//   { id: 3, name: "Vijay", email: "vijay@example.com" },
+// ];
+
+// // We only want the names for a contact list
+// const userNames = users.map((user) => user.name);
+
+// console.log(userNames);
+// // Output: ["Arjun", "Sneha", "Vijay"]
+const movies = [
+  {
+    id: 1,
+    title: "Baahubali",
+    director: "S. S. Rajamouli",
+    year: 2015,
+    ratings: [8, 9, 10],
+    genre: "Action",
+  },
+  {
+    id: 2,
+    title: "Arjun Reddy",
+    director: "Sandeep Reddy Vanga",
+    year: 2017,
+    ratings: [9, 8, 9],
+    genre: "Drama",
+  },
+  {
+    id: 3,
+    title: "Mahanati",
+    director: "Nag Ashwin",
+    year: 2018,
+    ratings: [10, 9, 8],
+    genre: "Biography",
+  },
+];
+
+// Write a function that formats movie titles with their ratings
+const getTitlesAndRatings = (movies) => {
+  // Your code here
+  return movies
+    .map((movie) => `${movie.title}: ${movie.ratings.join(", ")}`) // Format each movie
+    .join(" | "); // Glue all movies together into one string
+};
+
+console.log(getTitlesAndRatings(movies));
