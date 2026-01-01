@@ -70,40 +70,61 @@
 // const userNames = users.map((user) => user.name);
 
 // console.log(userNames);
-// // Output: ["Arjun", "Sneha", "Vijay"]
-const movies = [
-  {
-    id: 1,
-    title: "Baahubali",
-    director: "S. S. Rajamouli",
-    year: 2015,
-    ratings: [8, 9, 10],
-    genre: "Action",
-  },
-  {
-    id: 2,
-    title: "Arjun Reddy",
-    director: "Sandeep Reddy Vanga",
-    year: 2017,
-    ratings: [9, 8, 9],
-    genre: "Drama",
-  },
-  {
-    id: 3,
-    title: "Mahanati",
-    director: "Nag Ashwin",
-    year: 2018,
-    ratings: [10, 9, 8],
-    genre: "Biography",
-  },
+// // // Output: ["Arjun", "Sneha", "Vijay"]
+// const movies = [
+//   {
+//     id: 1,
+//     title: "Baahubali",
+//     director: "S. S. Rajamouli",
+//     year: 2015,
+//     ratings: [8, 9, 10],
+//     genre: "Action",
+//   },
+//   {
+//     id: 2,
+//     title: "Arjun Reddy",
+//     director: "Sandeep Reddy Vanga",
+//     year: 2017,
+//     ratings: [9, 8, 9],
+//     genre: "Drama",
+//   },
+//   {
+//     id: 3,
+//     title: "Mahanati",
+//     director: "Nag Ashwin",
+//     year: 2018,
+//     ratings: [10, 9, 8],
+//     genre: "Biography",
+//   },
+// ];
+
+// // Write a function that formats movie titles with their ratings
+// const getTitlesAndRatings = (movies) => {
+//   // Your code here
+//   return movies
+//     .map((movie) => `${movie.title}: ${movie.ratings.join(", ")}`) // Format each movie
+//     .join(" | "); // Glue all movies together into one string
+// };
+
+// console.log(getTitlesAndRatings(movies));
+const students = [
+  { name: "David", marks: 80 },
+  { name: "Vinoth", marks: 77 },
+  { name: "Divya", marks: 88 },
+  { name: "Ishitha", marks: 95 },
+  { name: "Charlie", marks: 94 },
+  { name: "Thomas", marks: 68 },
 ];
 
-// Write a function that formats movie titles with their ratings
-const getTitlesAndRatings = (movies) => {
-  // Your code here
-  return movies
-    .map((movie) => `${movie.title}: ${movie.ratings.join(", ")}`) // Format each movie
-    .join(" | "); // Glue all movies together into one string
-};
+// Use the reduce method to find the student object with the highest marks
+const topper = students.reduce((accumulator, currentStudent) => {
+  // Check if the current student's marks are greater than the accumulator's marks
+  if (currentStudent.marks > accumulator.marks) {
+    return currentStudent; // If so, the current student becomes the new accumulator
+  } else {
+    return accumulator; // Otherwise, keep the current accumulator
+  }
+}, students[0]); // Start with the first student as the initial accumulator
 
-console.log(getTitlesAndRatings(movies));
+console.log(`${topper.name} is the topper with ${topper.marks} marks.`);
+// Output: Ishitha is the topper with 95 marks.

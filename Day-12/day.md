@@ -11,10 +11,11 @@ it can give any method string or may array
 reduce is immutable
 auto boxing concept >>> learn it from home
 
-utf 8 >>>> other language character and emoji character
+utf 8 >>>> other language character and emoji character >>> as decoder
 html is forgive language
 html iis ignoring the h7 elments
 TITLE GIVE LINK
 fond hiearchy , imp
 one dot is one pixel
 what is
+never fix height of content
