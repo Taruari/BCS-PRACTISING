@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        font-size: 16px;
+        --fz-1: 2rem;
+        --fz-2: 1.5rem;
+        --bg-clr: #9cdbfff7;
+        --bdr-clr: solid #0ea7fff7;
+      }
+      body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+      }
+
+      .info {
+        font-size: var(--fz-2);
+        width: 50rem;
+        font-family: Roboto;
+        background: var(--bg-clr);
+        padding: var(--fz-2);
+        border-left: 0.6rem var(--bdr-clr);
+        border-radius: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="info">
+      <h4>Intended Audience</h4>
+      <p>
+        This tutorial assumes that you already have a static React site
+        (Gatsby/Next) being deployed on Vercel or Netlify.
+      </p>
+      <p>
+        It's written with the intermediate React developer in mind; if you're
+        newer to the modern JS ecosystem, it might be a bit hard to follow.
+      </p>
+    </div>
+  </body>
+</html>

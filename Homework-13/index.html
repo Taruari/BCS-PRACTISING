@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(
+          to right top,
+          #150303,
+          #3b1315,
+          #651b1f,
+          #912327,
+          #bf2c2c
+        );
+        min-height: 100vh;
+        margin: 30px;
+
+        display: grid;
+        place-content: center;
+        text-align: center;
+      }
+
+      .poster-image {
+        height: 491px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 24px;
+      }
+
+      .poster-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 36px;
+        font-family: Inter, sans-serif;
+        color: oklch(98.895% 0.01575 197.297);
+      }
+
+      .poster-container {
+        width: 300px;
+      }
+      .movie-spec {
+        color: oklch(0.65 0.04 20.26);
+      }
+      .movie-summary {
+        color: oklch(0.94 0.03 20.33);
+        font-family: "Poppins", sans-serif;
+        line-height: 1.5;
+      }
+      .dot {
+        color: oklch(0.94 0.03 20.33);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="poster-container">
+      <img
+        class="poster-image"
+        src="https://i.pinimg.com/1200x/d0/b9/ec/d0b9ec3a33c3b8627f9b1c6958b8fb3d.jpg"
+        alt=""
+      />
+      <h2 class="poster-title">Beast</h2>
+
+      <p class="movie-spec">
+        2022 <span class="dot">•</span> Action/Dark comedy
+        <span class="dot">•</span> 2h 38m
+      </p>
+
+      <p class="movie-summary">
+        Beast is an upcoming Indian Tamil-language action thriller film written
+        and directed by Nelson and produced by Sun Pictures. The film stars
+        Vijay and Pooja Hegde, while Selvaraghavan, Yogi Babu and Redin Kingsley
+        play supporting roles.
+      </p>
+    </div>
+  </body>
+</html>
