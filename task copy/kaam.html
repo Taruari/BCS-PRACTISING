@@ -11,6 +11,7 @@
       .hero-container {
         background: url("./sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
         height: 37rem;
+        width: auto;
         background-size: cover;
         object-position: center;
 
@@ -27,15 +28,19 @@
       }
       .box1 {
         background-color: aqua;
-        padding-left: 100px;
-        padding-right: 300px;
       }
+      .box2 {
+        img {
+          width: 35rem;
+        }
+      }
+
       .box4 {
         background-color: palevioletred;
       }
       .content-box {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
       }
     </style>
   </head>
@@ -60,6 +65,7 @@
           alt=""
         />
       </div>
+
       <div class="box3">
         <img
           src="./sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg"
@@ -77,6 +83,7 @@
 
         <h3>Learn more</h3>
       </div>
+
       <div class="box5">
         <img
           src="./sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg"
