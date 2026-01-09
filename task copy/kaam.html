@@ -10,7 +10,7 @@
       }
       .hero-container {
         background: url("./sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
-        height: 37rem;
+        height: 35rem;
         width: auto;
         background-size: cover;
         object-position: center;
@@ -28,19 +28,54 @@
       }
       .box1 {
         background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        padding-left: 10rem;
+        padding-right: 11rem;
       }
-      .box2 {
-        img {
-          width: 35rem;
-        }
+      .box4 {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        padding-left: 10rem;
+        padding-right: 11rem;
       }
 
-      .box4 {
-        background-color: palevioletred;
+      .box2 {
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
       }
-      .content-box {
+      .box3 {
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+      .box5 {
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+      .box6 {
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+      .content-box1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 0;
       }
     </style>
   </head>
@@ -48,7 +83,7 @@
     <section class="hero-container">
       <h1 class="creative">WE ARE CREATIVES</h1>
     </section>
-    <div class="content-box">
+    <div class="content-box1">
       <div class="box1">
         <h1>Transform your brand</h1>
 
@@ -90,12 +125,13 @@
           alt=""
         />
       </div>
-      <div class="box6">
-        <img
-          src="./sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg"
-          alt=""
-        />
-      </div>
+      <sectioin class="last-box">
+        <div class="box6">
+          <img
+            src="./sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg"
+            alt=""
+          /></div
+      ></sectioin>
     </div>
   </body>
 </html>
