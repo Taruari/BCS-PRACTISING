@@ -1,0 +1,16 @@
+.intro{
+    background-color: aqua;
+    justify-content: left;
+
+}
+.intro-container{
+    list-style: none;
+    
+}
+.month{display: flex;display: flex;
+    .number1{
+        font-size: 2rem;
+        font-weight: 600;
+        
+    }align-items: baseline;
+}
