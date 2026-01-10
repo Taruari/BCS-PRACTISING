@@ -5,39 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .emily {
-        border-radius: 50%;
+      .testimonials {
+        text-align: center;
+        padding-top: 50px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .firstbox {
+        background-color: aqua;
+        .emily {
+          border-radius: 50%;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 40rem;
+      }
+      .secondbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: rgb(232, 109, 191);
+        .jennie {
+          border-radius: 50%;
+        }
+      }
+      .thirdbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: rgb(84, 166, 105);
+        .thomas {
+          border-radius: 50%;
+        }
+      }
+      .content-images {
+        display: flex;
+
+        height: 24.2rem;
       }
     </style>
   </head>
   <body>
-    <h2>CLIENT TESTIMONIALS</h2>
-    <div class="firstbox">
-      <img class="emily" src="./images/image-emily.jpg" alt="" />
-      <p>
-        We put our trust in Sunnyside and they delivered, making sure our needs
-        were met and deadlines were always hit.
-      </p>
-      <h3>Emily R.</h3>
-      <p>Marketing Director</p>
-    </div>
-    <div class="secondbox">
-      <img class="jennie" src="./images/image-jennie.jpg" alt="" />
-      <p>
-        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
-        success made it a satisfying and enjoyable experience.
-      </p>
-      <h3>Thomas S.</h3>
-      <p>Chief Operating Officer</p>
-    </div>
-    <div class="thirdbox">
-      <img class="thomas" src="./images/image-thomas.jpg" alt="" />
-      <p>
-        Incredible end result! Our sales increased over 400% when we worked with
-        Sunnyside. Highly recommended!
-      </p>
-      <h3>Jennie F.</h3>
-      <p>Business Owner</p>
+    <section class="testimonials">
+      <h2>CLIENT TESTIMONIALS</h2>
+    </section>
+    <section class="container">
+      <div class="firstbox">
+        <img class="emily" src="./images/image-emily.jpg" alt="" />
+        <p>
+          We put our trust in Sunnyside and they delivered, making sure our
+          needs were met and deadlines were always hit.
+        </p>
+        <h3>Emily R.</h3>
+        <p>Marketing Director</p>
+      </div>
+      <div class="secondbox">
+        <img class="jennie" src="./images/image-thomas.jpg" alt="" />
+        <p>
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+          success made it a satisfying and enjoyable experience.
+        </p>
+        <h3>Thomas S.</h3>
+        <p>Chief Operating Officer</p>
+      </div>
+      <div class="thirdbox">
+        <img class="thomas" src="./images/image-jennie.jpg" alt="" />
+        <p>
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <h3>Jennie F.</h3>
+        <p>Business Owner</p>
+      </div>
+    </section>
+    <div class="content-images">
+      <img
+        src="./images/desktop/image-gallery-milkbottles.jpg"
+        alt=""
+        class="milk"
+      />
+      <img
+        src="./images/desktop/image-gallery-orange.jpg"
+        alt=""
+        class="orange"
+      />
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="" class="cone" />
+      <img
+        src="./images/desktop/image-gallery-sugarcubes.jpg"
+        alt=""
+        class="cube"
+      />
     </div>
   </body>
 </html>
