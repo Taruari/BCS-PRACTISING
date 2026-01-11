@@ -1,16 +1,45 @@
 .intro{
     background-color: aqua;
-    justify-content: left;
+    margin-top:2rem;
+     height: 30rem;
+    border-radius: 30px;
 
 }
-.intro-container{
+.base{background-color: rgb(131, 181, 125);
+    height: 30rem;
+    border-radius: 30px;
+    margin-top:2rem;
+
+}
+.pro{background-color: rgb(163, 66, 133);
+    height: 30rem;
+     border-radius: 30px;
+     
+
+
+}
+.enterprise{
+    background-color: rgb(223, 194, 5);
+    height: 30rem;
+    border-radius: 30px;
+    margin-top:2rem;
+
+}
+.intro-container-1{
     list-style: none;
     
 }
-.month{display: flex;display: flex;
+.month-1{display: flex;display: flex;
     .number1{
         font-size: 2rem;
         font-weight: 600;
         
     }align-items: baseline;
+}
+.pricebox{
+    display: flex;
+    border:5px solid crimson;
+    gap: 20px;
+    margin-top:3rem;
+    
 }
