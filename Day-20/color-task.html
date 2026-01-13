@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background: plum;
+        margin: 0;
+        display: grid;
+        min-height: 100vh;
+        place-content: center;
+      }
+
+      button {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    Event listener - Event - click  -->
+<!-- <button onclick="start()">▶️</button>
+    <button onclick="pause()">⏸️</button>
+    <button onclick="stop()">⏹️</button>
+
+    <script>
+      const colors = ["crimson", "orange", "teal", "pink", "blue"];
+
+      let colorInterval; // undefined
+
+      function pause() {}
+
+      // Lexical Scope
+      function start() {
+        console.log("Starting Slideshow ");
+
+        let i = 0;
+        colorInterval = setInterval(() => {
+          // Restart when out of bounds
+          if (i == colors.length) {
+            i = 0;
+          }
+
+          document.body.style.background = colors[i];
+          i++;
+        }, 1000);
+      }
+
+      function stop() {
+        console.log("Stopping...");
+        clearInterval(colorInterval);
+      }
+
+//   Task -  Every 2s body color must change and then cycle
+      //   document.body.setAttribute("style", "background: crimson");
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+
+        font-family: sans-serif;
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>10</h1>
+
+    <script>
+      //  Your code - Use Callback hell pattern
+      setTimeout(() => {
+        document.querySelector("h1").innerText = 9;
+
+        setTimeout(() => {
+          document.querySelector("h1").innerText = 8;
+          setTimeout(() => {
+            document.querySelector("h1").innerText = 7;
+            setTimeout(() => {
+              document.querySelector("h1").innerText = 6;
+              setTimeout(() => {
+                document.querySelector("h1").innerText = 5;
+                setTimeout(() => {
+                  document.querySelector("h1").innerText = 4;
+                  setTimeout(() => {
+                    document.querySelector("h1").innerText = 3;
+                    setTimeout(() => {
+                      document.querySelector("h1").innerText = 2;
+                      setTimeout(() => {
+                        document.querySelector("h1").innerText = 1;
+                        setTimeout(() => {
+                          document.querySelector("h1").innerText =
+                            "Happy Republic Day";
+                        }, 1000);
+                      }, 1000);
+                    }, 1000);
+                  }, 1000);
+                }, 1000);
+              }, 1000);
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    </script>
+  </body>
+</html>
