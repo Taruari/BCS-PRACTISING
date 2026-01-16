@@ -1,0 +1,89 @@
+
+      .testimonials {
+        text-align: center;
+        
+       
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .firstbox {
+        background-color: aqua;
+        .emily {
+          border-radius: 50%;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 40rem;
+      }
+      .secondbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: rgb(232, 109, 191);
+        .jennie {
+          border-radius: 50%;
+        }
+      }
+      .thirdbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: rgb(84, 166, 105);
+        .thomas {
+          border-radius: 50%;
+        }
+      }
+      .content-images {
+        display: flex;
+        height: 20rem;
+      }
+
+      .last-box {
+        height: 20rem;
+        background-color: rgb(84, 166, 105);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .sunny {
+        margin-top: 2rem;
+        margin-left: 5.5rem;
+        color: #2f7768;
+      }
+      .end {
+        display: flex;
+        column-gap: 3rem;
+        margin-top: 0;
+        list-style: none;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: flex-end;
+        margin-bottom: 7rem;
+        margin-top: 20px;
+        padding-left: 52px;
+        padding-right: 21px;
+      }
+      
+        
+      
+    
