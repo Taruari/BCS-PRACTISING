@@ -62,22 +62,16 @@ console.log(getHighRatedDishes([], moreOrders));
 // Tacos, Ramen
 
 const getHighRatedDishes = (baseOrders, extraOrders = []) => {
-  // 1. Combine arrays using the Spread Operator
   const allOrders = [...baseOrders, ...extraOrders];
 
-  // 2. Filter orders where the average rating is >= 4
-  return (
-    allOrders
-      .filter((order) => {
-        const average =
-          order.ratings.reduce((a, b) => a + b, 0) / order.ratings.length;
-        return average >= 4;
-      })
-      // 3. Map to return only the dishName
-      .map((order) => order.dishName)
-      // 4. Format as a comma-separated string
-      .join(", ")
-  );
+  return allOrders
+    .filter((order) => {
+      const average =
+        order.ratings.reduce((a, b) => a + b, 0) / order.ratings.length;
+      return average >= 4;
+    })
+    .map((order) => order.dishName)
+    .join(", ");
 };
 
 console.log(getHighRatedDishes(orders));
