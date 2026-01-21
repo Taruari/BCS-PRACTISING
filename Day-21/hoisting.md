@@ -14,7 +14,7 @@ es1-1997
 es2-1998
 es3-1999
 es5-2009
-es6-2015 nullish coaslision
+es6-2015 arrrow fn, rest and spread operator
 for testings purpose beta is using
 JS-> JIT (just in time ) -> compilation
 2 phase run your code 1.compilatiion 2. execution
