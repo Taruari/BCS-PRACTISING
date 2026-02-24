@@ -87,13 +87,13 @@
 # Please tell me the height of Zoro?: 163
 # Luffy is taller than Zoro by 10cm
 
-person1 = input("Please tell me the captain name?: ")
-height1 = int(input("Please tell me your height?: "))
-person2 = input("Please tell me the captain name?: ")
-height2 = int(input("Please tell me your height?: "))
-if height1 > height2:
-    print(f"{person1} is taller than {person2} by {height1 - height2}cm")
-elif height2 > height1:
-    print(f"{person2} is taller than {person1} by {height2 - height1}cm")
-elif height2 == height1:
-    print(f"{person1} and {person2} equal height")
+# person1 = input("Please tell me the captain name?: ")
+# height1 = int(input("Please tell me your height?: "))
+# person2 = input("Please tell me the captain name?: ")
+# height2 = int(input("Please tell me your height?: "))
+# if height1 > height2:
+#     print(f"{person1} is taller than {person2} by {height1 - height2}cm")
+# elif height2 > height1:
+#     print(f"{person2} is taller than {person1} by {height2 - height1}cm")
+# elif height2 == height1:
+#     print(f"{person1} and {person2} equal height")
