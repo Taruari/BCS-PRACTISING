@@ -97,3 +97,35 @@
 #     print(f"{person2} is taller than {person1} by {height2 - height1}cm")
 # elif height2 == height1:
 #     print(f"{person1} and {person2} equal height")
+
+
+stock1 = "vanilla"
+stock2 = "green tea"
+stock3 = "lemon"
+stock4 = "chocolate"
+
+
+# Task 1.2
+# Clue - String methods
+# Handle the extra space & letter case
+# Case1:
+# Please enter your fav 🍧?:      vaNillA
+# Yes, we have vanilla in stock
+
+# Case 2:
+# Please enter your fav 🍧?:   pisTa
+# Sorry, we ran out of pista
+
+# ice= input("Please enter your fav 🍧?: ")
+# if ice==stock1:
+#         print(f"Yes, we have {stock1} in stock")
+# elif ice==stock2:
+#          print(f"Yes, we have {stock2} in stock")
+# elif ice==stock3:
+#         print(f"Yes, we have {stock3} in stock")
+# elif ice==stock4:
+#          print(f"Yes, we have {stock4} in stock")
+# else:
+#     print(f"Sorry, we ran out of {ice}")        
+
+
