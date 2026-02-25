@@ -202,3 +202,5 @@ class Account:
         self.area = area
 nk = Account( "nk",50_000, "Tamilnadu" )
 print(nk.area)
+rishi= Account("rishi",3_00_000, "Bangalore")
+pushpa= Account("pushpa",10_00_000, "UP")
