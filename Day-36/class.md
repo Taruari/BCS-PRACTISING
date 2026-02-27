@@ -164,3 +164,13 @@ SELECT title,director,count(director )
 FROM movies
 group by director ;
 ```
+2.
+
+```
+SELECT id,director,sum(domestic_sales+international_sales)
+FROM movies
+join boxoffice
+on movies.id=boxoffice.movie_id
+group by director;
+```
+![alt text](image-6.png)
