@@ -67,4 +67,100 @@ on building_name=employees.building;
 SELECT Role,Name,building
 FROM Employees
 WHERE Building is Null;
+
+```
+
+2
+
+```
+SELECT DISTINCT building_name
+FROM buildings 
+LEFT JOIN employees
+ON building_name = building
+WHERE role IS NULL;
+```
+![alt text](image-2.png)
+
+## Exercise 9
+1
+```
+SELECT title ,(domestic_sales + international_sales)/1000000 
+FROM movies
+left JOIN  boxoffice
+on movies.id = boxoffice.movie_id;
+```
+
+2
+```
+SELECT title , rating*10
+FROM movies
+join boxoffice
+on movies.id =boxoffice.movie_id;
+```
+
+3.
+```
+SELECT title ,year
+FROM movies
+where year%2=0;
+```
+![alt text](image-3.png)
+
+
+## Exercise 10
+
+1.
+```
+SELECT Max(years_employed)
+FROM employees
+;
+```
+2.
+```
+SELECT role,AVG(years_employed)
+FROM employees
+GROUP BY role
+;
+```
+
+3
+
+```
+SELECT building,sum(years_employed)
+FROM employees
+group by building;
+```
+![alt text](image-4.png)
+
+
+## Exercise 11
+1
+```
+SELECT sum (role="Artist") 
+FROM employees
+;
+```
+2
+```
+SELECT role,count(role="role")
+FROM employees
+group by role;
+```
+3
+```
+SELECT * ,sum(years_employed)
+FROM employees
+where  role="Engineer" ;
+
+```
+![alt text](image-5.png)
+
+
+## Exercise 12
+
+1.
+```
+SELECT title,director,count(director )
+FROM movies
+group by director ;
 ```
